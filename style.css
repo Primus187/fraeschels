@@ -1,0 +1,102 @@
+/* Farben aus dem Gemeindewappen: Grün, Schwarz und Weiss. Die Szene füllt das ganze Fenster, die Bedienung liegt als kleine Flächen darüber. */
+:root{--gruen:#20872d;--gruen-tief:#17662a;--tinte:#16201a;--papier:#fbfaf5;--grau:#667066;--linie:#dfe2d6;--schatten:0 6px 24px #0f1a1226;--rand:12px;font-family:Bahnschrift,"DIN Alternate","Avenir Next","Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;background:#101821;color:var(--tinte)}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer}[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gruen);outline-offset:2px}
+svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
+h2{font-size:21px;font-weight:600;line-height:1.2;margin:0 0 14px}h3{font-size:13px;font-weight:600;color:var(--grau);margin:20px 0 8px}
+.small{font-size:11.5px;line-height:1.55;color:var(--grau)}
+
+#viewport{position:fixed;inset:0;overflow:hidden}#canvas-container{position:absolute;inset:0}canvas{display:block}
+canvas:focus-visible{outline:2px solid var(--gruen);outline-offset:-2px}
+#map-labels{position:absolute;inset:0;pointer-events:none}
+.map-label{position:absolute;left:0;top:0;white-space:nowrap;font-size:11px;background:#fbfaf5eb;color:var(--tinte);border:0;border-radius:4px;padding:3px 7px;box-shadow:0 1px 5px #0003}
+.map-label.landmark{pointer-events:auto;font-size:12px;font-weight:600;border-bottom:2px solid var(--gruen)}
+
+/* Oben links: Wappen, Ortsname und die aktuelle Ansicht */
+.brand{position:absolute;top:var(--rand);left:var(--rand);display:flex;align-items:center;gap:10px;padding:7px 14px 7px 9px;background:var(--papier);border-radius:10px;box-shadow:var(--schatten);pointer-events:none;max-width:calc(100% - 2*var(--rand))}
+.brand img{flex:none;width:27px;height:30px}.brand span{font-size:11.5px;color:var(--grau);line-height:1.25;min-width:0}
+.brand strong{display:block;font-size:15px;font-weight:600;color:var(--tinte);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Oben rechts: Zeit und Wetter */
+.chips{position:absolute;top:var(--rand);right:var(--rand);display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{position:relative;font-size:13px;background:var(--papier);border:0;border-radius:999px;padding:9px 14px 9px 29px;box-shadow:var(--schatten);white-space:nowrap}
+.chip::before{content:"";position:absolute;left:13px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:#b4b8ac}
+.chip[aria-pressed=true]::before{background:var(--gruen)}.chip:hover{background:#fff}
+.time-panel{position:absolute;top:calc(var(--rand) + 46px);right:var(--rand);width:300px;max-width:calc(100% - 2*var(--rand));background:var(--papier);border-radius:12px;box-shadow:var(--schatten);padding:15px 17px 17px;font-size:13px;z-index:4}
+.time-panel label{display:flex;justify-content:space-between;gap:10px;margin-top:12px;color:var(--grau)}.time-panel output{color:var(--tinte);font-weight:600}
+.time-panel input[type=range]{display:block;width:100%;margin:6px 0 0;accent-color:var(--gruen)}.time-readout{margin:0;line-height:1.5}
+.time-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}.time-actions button{font-size:13px;padding:7px 12px;border:1px solid var(--linie);border-radius:999px;background:none}
+.time-actions button:hover{background:#fff}.time-actions button[aria-pressed=true]{background:var(--gruen);border-color:var(--gruen);color:#fff}
+
+/* Rechts: Kompass, Zoom, Übersicht, Vollbild */
+.tools{position:absolute;right:var(--rand);top:calc(var(--rand) + 52px);display:flex;flex-direction:column;background:var(--papier);border-radius:10px;overflow:hidden;box-shadow:var(--schatten)}
+.tools button{width:40px;height:40px;display:grid;place-items:center;background:none;border:0}.tools button+button{border-top:1px solid var(--linie)}
+.tools button:hover{background:#fff}.tools button[aria-pressed=true]{color:var(--gruen)}
+#compass-arrow{display:block}.compass svg{width:26px;height:26px}.compass path{fill:#a3a89b;stroke:none}.compass .needle{fill:var(--gruen)}
+
+/* Unten: die wichtigsten Funktionen */
+.dock{position:absolute;left:50%;bottom:calc(var(--rand) + 14px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:2px;padding:5px;background:var(--papier);border-radius:14px;box-shadow:var(--schatten);z-index:3}
+.dock button{display:grid;justify-items:center;gap:3px;width:62px;padding:7px 0 5px;background:none;border:0;border-radius:10px;font-size:11px;color:var(--tinte)}
+.dock button:hover{background:#fff}.dock button[aria-expanded=true],.dock button[aria-pressed=true]{background:var(--gruen);color:#fff}
+
+/* Nur auf Strassenhöhe: weiter zum nächsten festen Blick (zurück führt «Ganze Gemeinde zeigen») */
+.float{position:absolute;left:50%;bottom:calc(var(--rand) + 92px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--gruen);color:#fff;border:0;border-radius:999px;padding:9px 16px;font-size:13px;white-space:nowrap;box-shadow:var(--schatten);z-index:3}
+.float:hover{background:var(--gruen-tief)}
+
+/* Bedienfelder: je eines offen, links über der Szene */
+.panel{position:absolute;left:var(--rand);top:calc(var(--rand) + 58px);bottom:calc(var(--rand) + 86px);width:310px;height:fit-content;max-height:calc(100% - 2*var(--rand) - 144px);overflow:auto;background:var(--papier);border-radius:12px;box-shadow:var(--schatten);padding:18px 18px 20px;font-size:14px;z-index:2}
+.panel p{line-height:1.55;margin:0 0 14px}.panel-close,#close-card,#close-info{position:absolute;right:6px;top:6px;width:34px;height:34px;background:none;border:0;border-radius:8px;font-size:23px;line-height:1;color:var(--grau)}
+.panel-close:hover,#close-card:hover,#close-info:hover{background:#fff;color:var(--tinte)}
+.field{display:block;font-size:12px;color:var(--grau);margin-bottom:12px}
+.field input,.field select{display:block;width:100%;margin-top:5px;padding:9px 10px;border:1px solid var(--linie);border-radius:8px;background:#fff;color:var(--tinte);font-size:14px}
+.places{margin:16px -8px 0}.location{display:block;width:100%;text-align:left;background:none;border:0;border-radius:8px;padding:8px}
+.location:hover{background:#fff}.location strong{display:block;font-size:15px;font-weight:600}.location small{display:block;margin-top:2px;font-size:12px;color:var(--grau)}
+.layers{display:flex;flex-direction:column;gap:11px}.layers label{display:flex;align-items:center;gap:10px;cursor:pointer}
+.layers input{accent-color:var(--gruen);width:16px;height:16px;margin:0}.layers span{margin-left:auto;font-size:12px;color:var(--grau)}
+/* Schalter: der Zustand steht rechts als Schieber, die Beschriftung bleibt gleich. */
+.switches{display:flex;flex-direction:column;margin:0 -8px}.switches button{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:none;border:0;border-radius:8px;padding:8px}
+.switches button:hover{background:#fff}.switches button[aria-pressed]::after{content:"";flex:none;width:32px;height:18px;border-radius:9px;background:radial-gradient(circle at 9px 50%,#fff 6.5px,#0000 7px) #b4b8ac}
+.switches button[aria-pressed=true]::after{background:radial-gradient(circle at 23px 50%,#fff 6.5px,#0000 7px) var(--gruen)}
+.actions{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}.actions button{text-align:left;padding:10px 12px;background:#fff;border:1px solid var(--linie);border-radius:8px}
+.actions button:hover{border-color:var(--gruen)}.actions button:disabled{opacity:.5}
+
+/* Angaben zum angeklickten Gebäude, Feld oder Ort */
+#card{position:absolute;right:calc(var(--rand) + 50px);bottom:calc(var(--rand) + 22px);width:300px;max-height:calc(100% - 180px);overflow:auto;background:var(--papier);border-left:4px solid var(--gruen);border-radius:4px 12px 12px 4px;box-shadow:var(--schatten);padding:17px 38px 15px 16px;z-index:2}
+#card h2{font-size:19px;margin:0 0 8px;hyphens:auto}.kind{font-size:11px;color:var(--gruen-tief);font-weight:600;letter-spacing:.06em;margin:0 0 5px}
+#card-body{font-size:13.5px;line-height:1.5;margin:0 0 8px}#card-note{margin:0}
+
+.map-hint{position:absolute;left:50%;bottom:calc(var(--rand) + 92px);transform:translateX(-50%);font-size:12px;color:#fff;background:#16201ab8;padding:6px 12px;border-radius:999px;white-space:nowrap;pointer-events:none;animation:hinweis 9s forwards}
+@keyframes hinweis{0%,85%{opacity:1}100%{opacity:0;visibility:hidden}}
+#status{position:absolute;left:50%;top:40%;transform:translateX(-50%);max-width:min(420px,90%);background:var(--papier);border-radius:10px;box-shadow:var(--schatten);padding:14px 18px;font-size:14px;line-height:1.5;z-index:5}#status:empty{display:none}
+.attribution{position:absolute;bottom:0;right:0;background:#fbfaf5c7;font-size:9.5px;padding:3px 7px;color:#4c554d;border-radius:6px 0 0 0;white-space:nowrap}
+
+/* Ladebild: das Wappen gross, darunter der Fortschritt. Der Balken wächst über transform, damit er auch weiterläuft, während das Modell rechnet. */
+.loading{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;background:var(--gruen);color:#fff;text-align:center;padding:24px;transition:opacity .7s ease,visibility .7s}
+.loading.done{opacity:0;visibility:hidden;pointer-events:none}
+.loading img{width:auto;height:min(46vh,62vw);filter:drop-shadow(0 14px 30px #0b2a1259)}
+.loading strong{font-size:clamp(34px,6vw,60px);font-weight:700;letter-spacing:.04em;line-height:1;margin-top:clamp(20px,4vh,40px)}
+.loading .bar{width:min(340px,70vw);height:4px;margin-top:22px;background:#ffffff40;border-radius:2px;overflow:hidden}
+.loading .bar i{display:block;height:100%;background:#fff;transform-origin:left;transform:scaleX(0);transition:transform .4s cubic-bezier(.2,.6,.3,1);will-change:transform}
+.loading p{font-size:14px;margin:12px 0 0;min-height:1.4em;max-width:min(420px,90vw);line-height:1.4}
+.loading.failed .bar{display:none}
+
+dialog{width:calc(100% - 32px);max-width:560px;max-height:85dvh;overflow:auto;background:var(--papier);color:var(--tinte);border:0;border-radius:14px;padding:30px 32px;box-shadow:0 15px 90px #0005}
+dialog::backdrop{background:#16201a80;backdrop-filter:blur(3px)}dialog h2{font-size:26px;margin:0 0 16px;padding-right:20px}dialog p,dialog li{font-size:14px;line-height:1.65}dialog a{color:var(--gruen-tief)}
+.toast{position:fixed;top:calc(var(--rand) + 58px);left:50%;transform:translateX(-50%);max-width:90vw;background:var(--tinte);color:#fff;border-radius:8px;padding:11px 18px;font-size:13px;z-index:10}
+
+@media(max-width:720px){
+ :root{--rand:10px}
+ .chips{top:calc(var(--rand) + 52px);left:var(--rand);right:calc(var(--rand) + 46px);justify-content:flex-start}.chip{font-size:12px;padding:8px 12px 8px 26px}.chip::before{left:11px}
+ .time-panel{top:calc(var(--rand) + 134px);left:var(--rand);right:var(--rand);width:auto}
+ .dock{bottom:calc(18px + env(safe-area-inset-bottom));max-width:calc(100% - 2*var(--rand))}.dock button{width:54px}
+ .panel{top:auto;left:var(--rand);right:var(--rand);bottom:calc(86px + env(safe-area-inset-bottom));width:auto;max-height:min(58%,calc(100% - 160px))}
+ #card{left:var(--rand);right:var(--rand);bottom:calc(86px + env(safe-area-inset-bottom));width:auto;max-height:38%}
+ .map-hint{display:none}.attribution{left:0;text-align:center;font-size:7.5px;border-radius:0;overflow:hidden;text-overflow:ellipsis}
+ dialog{padding:24px 20px}
+}
+@media(prefers-reduced-motion:reduce){.loading,.loading .bar i{transition:none}.map-hint{animation:none;display:none}}
+
+/* Bildschirmschoner und Filmmodus: nur das Bild, ohne Bedienung */
+html.screensaver #viewport>:not(#canvas-container):not(#loading),html.screensaver dialog,html.screensaver .toast{display:none!important}
+html.screensaver canvas{pointer-events:none}

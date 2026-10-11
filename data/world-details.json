@@ -1,0 +1,1415 @@
+{
+  "version": 8,
+  "source": "SWISSIMAGE high-resolution WMS references, 2026-10-08; swisstopo pitch footprint; user aerial reference; street-side layouts approximate",
+  "referenceMap": "https://map.geo.admin.ch/#/map?lang=de&center=2582420.52,1205269.62&z=12.873&bgLayer=ch.swisstopo.swissimage",
+  "accuracy": "Visible surface footprints traced from aerial references. Heights, equipment type, garden beds, plant species, furniture, lamp positions and transient parked vehicles are approximate. No cadastral boundaries or individual inventory survey.",
+  "sport": {
+    "points": [
+      [
+        -14.98,
+        13.15
+      ],
+      [
+        -3.58,
+        22.51
+      ],
+      [
+        -9.28,
+        29.44
+      ],
+      [
+        -20.68,
+        20.07
+      ]
+    ],
+    "confidence": "official pitch polygon and red surfacing observed; markings and hoops approximate"
+  },
+  "playground": {
+    "kind": "playground",
+    "reference": "zentrum",
+    "points": [
+      [
+        -25.312,
+        23.788
+      ],
+      [
+        -19.744,
+        28.85
+      ],
+      [
+        -16.2,
+        31.887
+      ],
+      [
+        -22.106,
+        34.248
+      ],
+      [
+        -25.819,
+        28.85
+      ]
+    ],
+    "confidence": "visible light playground surfacing; equipment shape and heights approximate"
+  },
+  "gardens": [
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          -97.537,
+          67.147
+        ],
+        [
+          -84.037,
+          78.62
+        ],
+        [
+          -88.594,
+          84.356
+        ],
+        [
+          -99.562,
+          78.113
+        ],
+        [
+          -101.081,
+          72.377
+        ]
+      ],
+      "style": "flower",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          105.975,
+          -59.555
+        ],
+        [
+          112.387,
+          -58.374
+        ],
+        [
+          106.988,
+          -47.408
+        ],
+        [
+          100.575,
+          -49.939
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          28.688,
+          35.429
+        ],
+        [
+          34.088,
+          30.874
+        ],
+        [
+          40.5,
+          36.442
+        ],
+        [
+          31.05,
+          39.985
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          -128.419,
+          -82.669
+        ],
+        [
+          -126.225,
+          -82.163
+        ],
+        [
+          -126.9,
+          -77.439
+        ],
+        [
+          -130.444,
+          -78.282
+        ]
+      ],
+      "style": "flower",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          -126.562,
+          62.929
+        ],
+        [
+          -121.162,
+          56.181
+        ],
+        [
+          -111.544,
+          62.592
+        ],
+        [
+          -113.737,
+          66.979
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "zentrum",
+      "points": [
+        [
+          19.238,
+          -58.037
+        ],
+        [
+          25.312,
+          -54.831
+        ],
+        [
+          23.456,
+          -50.613
+        ],
+        [
+          17.381,
+          -53.313
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          6.95,
+          193.54
+        ],
+        [
+          22.625,
+          198.763
+        ],
+        [
+          17.95,
+          218.007
+        ],
+        [
+          4.475,
+          213.608
+        ]
+      ],
+      "style": "flower",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          5.575,
+          272.44
+        ],
+        [
+          12.175,
+          274.639
+        ],
+        [
+          10.25,
+          290.584
+        ],
+        [
+          2.0,
+          288.385
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          102.925,
+          324.948
+        ],
+        [
+          111.725,
+          330.447
+        ],
+        [
+          106.5,
+          337.595
+        ],
+        [
+          97.7,
+          331.821
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          112.275,
+          241.649
+        ],
+        [
+          122.725,
+          247.148
+        ],
+        [
+          117.775,
+          252.371
+        ],
+        [
+          109.525,
+          247.973
+        ]
+      ],
+      "style": "flower",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          19.05,
+          389.278
+        ],
+        [
+          26.75,
+          397.526
+        ],
+        [
+          18.775,
+          409.897
+        ],
+        [
+          12.45,
+          404.399
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          -4.325,
+          336.495
+        ],
+        [
+          11.625,
+          342.268
+        ],
+        [
+          7.775,
+          348.591
+        ],
+        [
+          -8.45,
+          343.918
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          -27.975,
+          350.79
+        ],
+        [
+          -19.175,
+          352.165
+        ],
+        [
+          -20.0,
+          360.412
+        ],
+        [
+          -29.9,
+          359.038
+        ]
+      ],
+      "style": "flower",
+      "enclosure": "fence",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    },
+    {
+      "kind": "garden",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          25.375,
+          313.952
+        ],
+        [
+          35.0,
+          315.326
+        ],
+        [
+          33.075,
+          320.825
+        ],
+        [
+          24.275,
+          319.175
+        ]
+      ],
+      "style": "vegetable",
+      "enclosure": "hedge",
+      "confidence": "interpreted footprint; bed layout and plant species approximate"
+    }
+  ],
+  "patios": [
+    {
+      "kind": "patio",
+      "reference": "zentrum",
+      "points": [
+        [
+          35.1,
+          -84.356
+        ],
+        [
+          39.994,
+          -89.923
+        ],
+        [
+          47.25,
+          -85.368
+        ],
+        [
+          44.55,
+          -77.607
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "zentrum",
+      "points": [
+        [
+          42.525,
+          -17.546
+        ],
+        [
+          48.094,
+          -16.365
+        ],
+        [
+          48.6,
+          -12.147
+        ],
+        [
+          42.862,
+          -12.822
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "zentrum",
+      "points": [
+        [
+          82.35,
+          -29.018
+        ],
+        [
+          89.1,
+          -26.488
+        ],
+        [
+          87.919,
+          -22.101
+        ],
+        [
+          81.169,
+          -24.294
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "zentrum",
+      "points": [
+        [
+          -108.675,
+          -95.66
+        ],
+        [
+          -102.769,
+          -93.804
+        ],
+        [
+          -103.781,
+          -89.417
+        ],
+        [
+          -109.856,
+          -90.936
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "zentrum",
+      "points": [
+        [
+          29.025,
+          23.113
+        ],
+        [
+          34.425,
+          29.018
+        ],
+        [
+          30.544,
+          32.224
+        ],
+        [
+          25.987,
+          25.813
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          3.925,
+          235.052
+        ],
+        [
+          10.8,
+          236.151
+        ],
+        [
+          9.7,
+          243.574
+        ],
+        [
+          2.275,
+          242.199
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          42.975,
+          288.935
+        ],
+        [
+          51.5,
+          292.509
+        ],
+        [
+          50.675,
+          296.907
+        ],
+        [
+          41.6,
+          294.158
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          113.1,
+          329.622
+        ],
+        [
+          121.075,
+          335.395
+        ],
+        [
+          117.5,
+          340.893
+        ],
+        [
+          109.525,
+          335.12
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          70.475,
+          263.368
+        ],
+        [
+          75.975,
+          266.392
+        ],
+        [
+          72.675,
+          271.34
+        ],
+        [
+          67.45,
+          268.316
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    },
+    {
+      "kind": "patio",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          164.525,
+          199.588
+        ],
+        [
+          170.575,
+          203.162
+        ],
+        [
+          167.825,
+          207.835
+        ],
+        [
+          161.5,
+          203.711
+        ]
+      ],
+      "confidence": "interpreted visible paved footprint"
+    }
+  ],
+  "benches": [
+    {
+      "kind": "bench",
+      "reference": "zentrum",
+      "points": [
+        [
+          -34.425,
+          27.669
+        ]
+      ],
+      "angle": 0.55,
+      "confidence": "visible elongated seating object; type and dimensions approximate"
+    },
+    {
+      "kind": "bench",
+      "reference": "zentrum",
+      "points": [
+        [
+          -43.369,
+          23.788
+        ]
+      ],
+      "angle": 0.55,
+      "confidence": "visible elongated seating object; type and dimensions approximate"
+    }
+  ],
+  "lamps": [
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          90.788,
+          0.0
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          83.194,
+          43.359
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          64.969,
+          -16.365
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          26.325,
+          -14.847
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          10.462,
+          -33.742
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          -28.856,
+          -32.224
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          -74.588,
+          -48.42
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          -99.562,
+          -36.779
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          -45.9,
+          5.567
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "zentrum",
+      "points": [
+        [
+          -33.75,
+          41.166
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          -5.975,
+          198.213
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          -8.45,
+          304.055
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          -17.8,
+          380.481
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          46.0,
+          129.759
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          106.5,
+          330.447
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          74.325,
+          305.43
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          1.45,
+          250.722
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    },
+    {
+      "kind": "lamp",
+      "reference": "dorf-sued",
+      "points": [
+        [
+          12.175,
+          350.79
+        ]
+      ],
+      "confidence": "approximate road-edge layout, not individually surveyed"
+    }
+  ],
+  "parking": [
+    {
+      "kind": "parking",
+      "reference": "zentrum",
+      "points": [
+        [
+          -99.225,
+          -77.945
+        ],
+        [
+          -95.006,
+          -84.525
+        ],
+        [
+          -90.281,
+          -81.15
+        ],
+        [
+          -93.656,
+          -74.739
+        ]
+      ],
+      "confidence": "visible station parking; markings approximated"
+    },
+    {
+      "kind": "parking",
+      "reference": "zentrum",
+      "points": [
+        [
+          -89.1,
+          -92.623
+        ],
+        [
+          -85.725,
+          -97.347
+        ],
+        [
+          -79.65,
+          -92.791
+        ],
+        [
+          -83.194,
+          -87.899
+        ]
+      ],
+      "confidence": "visible station parking; markings approximated"
+    }
+  ],
+  "tanks": [
+    {
+      "kind": "irrigation-tank",
+      "reference": "dorf-nord",
+      "points": [
+        [
+          -194.062,
+          -274.688
+        ]
+      ],
+      "radius": 10.3125,
+      "confidence": "visible circular water storage footprint; height approximate"
+    },
+    {
+      "kind": "irrigation-tank",
+      "reference": "dorf-nord",
+      "points": [
+        [
+          -183.75,
+          -291.875
+        ]
+      ],
+      "radius": 10.3125,
+      "confidence": "visible circular water storage footprint; height approximate"
+    },
+    {
+      "kind": "irrigation-tank",
+      "reference": "dorf-nord",
+      "points": [
+        [
+          -174.688,
+          -308.75
+        ]
+      ],
+      "radius": 10.0,
+      "confidence": "visible circular water storage footprint; height approximate"
+    },
+    {
+      "kind": "irrigation-tank",
+      "reference": "dorf-nord",
+      "points": [
+        [
+          -145.312,
+          -343.75
+        ]
+      ],
+      "radius": 7.1875,
+      "confidence": "visible circular water storage footprint; height approximate"
+    },
+    {
+      "kind": "irrigation-tank",
+      "reference": "dorf-nord",
+      "points": [
+        [
+          -138.125,
+          -353.438
+        ]
+      ],
+      "radius": 5.3125,
+      "confidence": "visible circular water storage footprint; height approximate"
+    }
+  ],
+  "paths": [
+    {
+      "kind": "path",
+      "reference": "zentrum",
+      "points": [
+        [
+          -24.469,
+          33.067
+        ],
+        [
+          -30.038,
+          36.442
+        ],
+        [
+          -34.256,
+          41.672
+        ],
+        [
+          -41.513,
+          46.733
+        ]
+      ],
+      "confidence": "visible access path interpreted"
+    }
+  ],
+  "cars": [
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          -79.65,
+          -56.012
+        ]
+      ],
+      "angle": 0.6,
+      "color": "#536372",
+      "confidence": "representative parked vehicle, not current occupancy"
+    },
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          -95.006,
+          -46.564
+        ]
+      ],
+      "angle": 0.6,
+      "color": "#e7e8df",
+      "confidence": "representative parked vehicle, not current occupancy"
+    },
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          15.019,
+          -62.255
+        ]
+      ],
+      "angle": 0.5,
+      "color": "#53677a",
+      "confidence": "representative parked vehicle, not current occupancy"
+    },
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          60.75,
+          -96.334
+        ]
+      ],
+      "angle": 0.3,
+      "color": "#496575",
+      "confidence": "representative parked vehicle, not current occupancy"
+    },
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          31.894,
+          -98.359
+        ]
+      ],
+      "angle": 0.5,
+      "color": "#365372",
+      "confidence": "representative parked vehicle, not current occupancy"
+    },
+    {
+      "kind": "car",
+      "reference": "zentrum",
+      "points": [
+        [
+          -101.081,
+          17.883
+        ]
+      ],
+      "angle": 0.4,
+      "color": "#843e39",
+      "confidence": "representative parked vehicle, not current occupancy"
+    }
+  ],
+  "storageYard": {
+    "name": "Lagerareal Gruebe",
+    "points": [
+      [
+        353.225,
+        -116.271
+      ],
+      [
+        364.913,
+        -122.008
+      ],
+      [
+        381.062,
+        -132.207
+      ],
+      [
+        401.675,
+        -132.632
+      ],
+      [
+        405.712,
+        -118.821
+      ],
+      [
+        401.675,
+        -97.786
+      ],
+      [
+        397.0,
+        -72.502
+      ],
+      [
+        399.55,
+        -56.141
+      ],
+      [
+        399.975,
+        -37.443
+      ],
+      [
+        394.238,
+        -22.783
+      ],
+      [
+        382.337,
+        -24.058
+      ],
+      [
+        378.938,
+        -37.656
+      ],
+      [
+        382.55,
+        -62.515
+      ],
+      [
+        382.763,
+        -75.264
+      ],
+      [
+        379.362,
+        -93.324
+      ],
+      [
+        372.775,
+        -102.036
+      ],
+      [
+        362.15,
+        -109.047
+      ]
+    ],
+    "source": "Visible storage surfaces in SWISSIMAGE; no municipal workyard identification.",
+    "stacks": [
+      {
+        "point": [
+          371.5,
+          -66.765
+        ],
+        "size": [
+          5.5,
+          1.1,
+          1.4
+        ],
+        "material": "concrete",
+        "angle": 0.05
+      },
+      {
+        "point": [
+          381.488,
+          -66.977
+        ],
+        "size": [
+          6.6,
+          1.2,
+          1.4
+        ],
+        "material": "concrete",
+        "angle": 0.05
+      },
+      {
+        "point": [
+          387.225,
+          -49.767
+        ],
+        "size": [
+          2.1,
+          1.5,
+          5.3
+        ],
+        "material": "concrete",
+        "angle": 0.04
+      },
+      {
+        "point": [
+          380.637,
+          -127.745
+        ],
+        "size": [
+          3.7,
+          1.4,
+          3.2
+        ],
+        "material": "wood",
+        "angle": 0.35
+      },
+      {
+        "point": [
+          392.538,
+          -123.283
+        ],
+        "size": [
+          3.3,
+          1.1,
+          3.3
+        ],
+        "material": "wood",
+        "angle": 0.05
+      },
+      {
+        "point": [
+          380.637,
+          -75.476
+        ],
+        "size": [
+          1.8,
+          1.2,
+          1.4
+        ],
+        "material": "metal",
+        "angle": 0.05
+      },
+      {
+        "point": [
+          393.175,
+          -82.276
+        ],
+        "size": [
+          2.5,
+          1.5,
+          2
+        ],
+        "material": "metal",
+        "angle": 0.05
+      }
+    ],
+    "focus": [
+      384.888,
+      -87.162
+    ]
+  },
+  "workyard": {
+    "name": "Werkhof und Sammelstelle",
+    "source": "Location and collection types confirmed by resident; outline traced from SWISSIMAGE. Container designs and heights approximated.",
+    "points": [
+      [
+        -39.647,
+        -168.245
+      ],
+      [
+        -33.397,
+        -168.788
+      ],
+      [
+        -23.75,
+        -160.768
+      ],
+      [
+        -30.543,
+        -153.972
+      ],
+      [
+        -44.13,
+        -151.933
+      ],
+      [
+        -48.75,
+        -134.941
+      ],
+      [
+        -52.283,
+        -124.61
+      ],
+      [
+        -57.853,
+        -120.124
+      ],
+      [
+        -61.793,
+        -124.61
+      ],
+      [
+        -57.174,
+        -133.717
+      ],
+      [
+        -51.603,
+        -148.534
+      ],
+      [
+        -44.402,
+        -154.923
+      ]
+    ],
+    "focus": [
+      -56,
+      -124
+    ],
+    "containers": [
+      {
+        "type": "alu",
+        "point": [
+          -57.717,
+          -124.746
+        ],
+        "size": [
+          2.2,
+          1.65,
+          4.8
+        ]
+      },
+      {
+        "type": "glass",
+        "point": [
+          -60.707,
+          -127.736
+        ],
+        "size": [
+          1.4,
+          1.6,
+          1.4
+        ]
+      },
+      {
+        "type": "clothes",
+        "point": [
+          -53.777,
+          -121.891
+        ],
+        "size": [
+          1.25,
+          1.9,
+          1.35
+        ]
+      }
+    ],
+    "angle": 0.572
+  },
+  "station": {
+    "platform": [
+      [
+        -47.968,
+        -157.91
+      ],
+      [
+        -45.525,
+        -156.688
+      ],
+      [
+        -110.69,
+        -55.684
+      ],
+      [
+        -113.54,
+        -57.314
+      ]
+    ],
+    "shelter": {
+      "point": [
+        -93.1,
+        -77.5
+      ],
+      "angle": 0.9931321609904101,
+      "size": [
+        4.76,
+        2.39
+      ],
+      "orientation": "Long roof edge parallel to the measured station platform and rail axis; resident confirmed.",
+      "placement": "Waiting room at the third of four surveyed structures along the platform, as identified by the client on an aerial image (1 toilet, 2 station canopy with name sign and ticket machines, 3 waiting room, 4 bicycle shelter). The surveyed building EGID 502021833 is the toilet and is shown as a normal building again."
+    },
+    "source": "Platform outline from local swisstopo construct layer; shelter location from the surveyed shelter outline and the client's aerial reference. Furniture designs and heights approximated.",
+    "forecourt": [
+      [
+        -81,
+        -104
+      ],
+      [
+        -71,
+        -99
+      ],
+      [
+        -72,
+        -90
+      ],
+      [
+        -79,
+        -78
+      ],
+      [
+        -91,
+        -59
+      ],
+      [
+        -106,
+        -61
+      ],
+      [
+        -95,
+        -80
+      ]
+    ]
+  }
+}

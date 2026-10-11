@@ -1,0 +1,4 @@
+Alle Dateien nach /fraeschels/ auf einen HTTP/HTTPS-Webserver hochladen.
+<iframe src="/fraeschels/index.html" title="Fräschels in 3D" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
+Keine externen Geodatendienste und keine API-Schlüssel erforderlich.
+Einzige externe Abfrage: das aktuelle Wetter bei api.open-meteo.com (im Browser der Besuchenden). Ohne Antwort bleibt die Abendstimmung; mit ?weather=off ist die Abfrage ganz ausgeschaltet.

@@ -1,0 +1,14 @@
+{
+  "source": "SWISSIMAGE, sichtbare Flächengrenzen manuell angenähert; keine Katastergrenzen",
+  "referenceImageSize": [1228, 1080],
+  "fields": [
+    {"name": "Ackerfläche West", "type": "crop", "pixels": [[0,352],[285,456],[200,583],[0,510]]},
+    {"name": "Ackerfläche West – Boden", "type": "soil", "pixels": [[0,513],[197,591],[107,729],[0,682]]},
+    {"name": "Wiese Südwest", "type": "meadow", "pixels": [[0,935],[180,720],[275,496],[312,514],[232,676],[351,867],[279,1080],[0,1080]]}
+  ],
+  "hedges": [
+    {"pixels": [[943,896],[1021,931],[1075,920],[1110,849]]},
+    {"pixels": [[956,174],[1036,224],[1091,251]]},
+    {"pixels": [[360,704],[413,751],[457,709]]}
+  ]
+}

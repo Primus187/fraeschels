@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "referenceSize": [1228, 1080],
+  "source": "SWISSIMAGE reference-only.png; historic street video 6rLXfpWQRno, 16–45 seconds. Manual interpretation, no cadastral survey.",
+  "accuracy": "Surface extents manually traced from aerial imagery. Sidewalk widths and curb heights approximated. Facade type association is provisional; window arrangements remain approximated.",
+  "sidewalks": [
+    {"side": "west", "fromPixelY": 1030, "toPixelY": 340, "width": 1.45},
+    {"side": "east", "fromPixelY": 760, "toPixelY": 420, "width": 1.5}
+  ],
+  "surfaces": [
+    {"name":"Vorplatz_Brünnenrain","type":"paving","pixels":[[686,555],[735,583],[798,601],[811,556],[762,537],[748,551],[711,532]]},
+    {"name":"Einmündung_Brünnenrain","type":"asphalt","pixels":[[772,525],[814,540],[818,558],[769,560],[748,544]]},
+    {"name":"Vorplatz_West_Hauptstrasse","type":"paving","pixels":[[790,491],[812,474],[828,480],[817,534],[795,531],[784,518]]},
+    {"name":"Vorplatz_Ost_Hauptstrasse","type":"paving","pixels":[[892,504],[914,489],[915,516],[864,532],[849,517],[860,466],[877,472]]},
+    {"name":"Einfahrt_Ost_Mitte","type":"paving","pixels":[[842,646],[901,677],[924,643],[907,627],[891,649],[864,635],[846,613]]},
+    {"name":"Hofraum_Ost_Süd","type":"paving","pixels":[[834,759],[889,789],[909,752],[896,749],[878,754],[861,739],[846,708],[824,702],[809,731]]},
+    {"name":"Einfahrt_West_Süd","type":"paving","pixels":[[757,656],[799,677],[786,706],[771,726],[752,711],[762,692],[750,675]]},
+    {"name":"Vorplatz_West_Süd","type":"paving","pixels":[[724,782],[743,793],[716,837],[695,819],[711,800]]},
+    {"name":"Hofraum_West_Nord","type":"paving","pixels":[[907,279],[943,267],[956,284],[930,318],[893,299]]},
+    {"name":"Einfahrt_West_Nord","type":"asphalt","pixels":[[859,332],[898,349],[886,377],[839,366],[840,353]]},
+    {"name":"Einmündung_Gruebeweg","type":"asphalt","pixels":[[850,530],[869,516],[904,530],[919,547],[895,560],[853,550]]}
+  ],
+  "crosswalks": [
+    {"pixel":[833,535],"name":"Fussgängerstreifen_Mitte"},
+    {"pixel":[807,679],"name":"Fussgängerstreifen_Süd"},
+    {"pixel":[920,335],"name":"Fussgängerstreifen_Nord"},
+    {"pixel":[614,1023],"name":"Fussgängerstreifen_Schmiedstrasse"}
+  ],
+  "facades": [
+    {"egid":1534823,"wall":"#f1ece1","shutters":"#8e2f2a","type":"plaster","confidence":"provisional","note":"Gemeindehaus: heller Putz, rote Fensterläden und Riegwerk im Obergeschoss nach einem Foto des Auftraggebers."},
+    {"egid":502021788,"wall":"#f2efe6","shutters":"#6d4a33","type":"plaster","confidence":"provisional","note":"Ofenhaus: weiss verputzt mit Holzläden und Holztoren nach zwei Fotos des Auftraggebers; Tore und Fensteranordnung sind nicht nachgebaut."},
+    {"egid":1534759,"wall":"#eee9dd","shutters":"#5e4033","type":"plaster","confidence":"provisional","note":"Helle Giebelfassade mit dunklen Fensterläden aus der Strassenansicht bei 30 s; Zuordnung anhand Strassenverlauf und Nachbargebäuden angenähert."},
+    {"egid":1534836,"wall":"#e9e4d5","shutters":"#4c5445","type":"plaster","confidence":"provisional","note":"Heller Wohnteil mit dunklen Fensterläden, Strassenansicht bei 30 s; Zuordnung angenähert."},
+    {"egid":1534821,"wall":"#d8cdb9","timber":"#665343","type":"mixed-farm","confidence":"provisional","note":"Gemischter Putz-/Holzfassadentyp aus den Ansichten bei 24–30 s. Aufteilung in Wohn- und Ökonomieteil ist vereinfacht."},
+    {"egid":1534810,"wall":"#e4ded0","timber":"#71614e","type":"mixed-farm","confidence":"provisional","note":"Heller Wohnteil und dunkler Ökonomieteil aus der Ansichtenfolge bei 24 s; Zuordnung und Aufteilung angenähert."}
+  ],
+  "viewpoints": [
+    {"name":"Hauptstrasse · Süd","cameraPixel":[790,710],"lookPixel":[832,548]},
+    {"name":"Hauptstrasse · Mitte","cameraPixel":[825,580],"lookPixel":[882,400]},
+    {"name":"Hauptstrasse · Nord","cameraPixel":[916,343],"lookPixel":[1000,203]}
+  ]
+}
